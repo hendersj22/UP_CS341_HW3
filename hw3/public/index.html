@@ -1,0 +1,106 @@
+<!-- File: CheesecakeOrderForm2.html -->
+<!-- Author: Joshua Henderson -->
+<!-- CS41_HW2_HTML_CSS -->
+<!-- Version: 08 Feb 2021 -->
+<!-- Recieved HTML help from wwww.w3schools.com, https://www.w3schools.com/jsref/prop_textarea_value.asp, https://www.w3schools.com/js/js_if_else.asp, https://stackoverflow.com/questions/25167909/check-if-textarea-textbox-contains-a-certain-string, https://www.w3schools.com/jsref/met_win_alert.asp, https://www.w3schools.com/howto/howto_custom_select.asp, https://www.w3schools.com/css/css_dropdowns.asp, https://bootsnipp.com/snippets/MaKa3, https://www.w3schools.com/howto/howto_css_dropdown.asp, https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/, https://www.w3schools.com/js/js_output.asp, https://stackoverflow.com/questions/47340492/how-to-make-html-text-hidden-until-clicked-on, https://stackoverflow.com/questions/40858456/how-to-display-a-javascript-var-in-html-body, https://www.w3schools.com/jsreF/prop_radio_value.asp, https://jsfiddle.net/pairdocs/3bxq1s6a/20/, https://www.pair.com/support/kb/how-to-use-jquery-to-show-hide-a-form-on-click/, https://www.w3schools.com/jquery/jquery_syntax.asp-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="stylesheets/cheesecake2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+</script>
+</head>
+<body>
+
+<script src = "javascripts/DropDown.js"></script>
+
+<h1 style="font-size: 43px;">Cheesecake Order Form</h1> <!--Title text -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Image of Cherry Cheesecake" width="200" height="200"> <!-- image of cheesecake -->
+
+<table id="selectionTable">
+		<tr>
+		    <td>Quantity</td>
+		    <td>Topping</td> 
+  		</tr>
+
+		<td>
+			<form action="/action_page.php">
+			<select name="quantity" id="quantity">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select>
+			</form>
+		</td>
+
+		<td>
+			<form id="topping">
+			<input type="radio" id="plain" name="topping" value="plain" checked="checked">
+			<label for="plain">Plain</label><br>
+			<input type="radio" id="cherry" name="topping" value="cherry">
+			<label for="cherry">Cherry</label><br>
+			<input type="radio" id="chocolate" name="topping" value="chocolate">
+			<label for="chocolate">Chocolate</label>
+			</form> <!-- radio button -->
+		</td>
+</table>
+<!-- this table holds the buttons so that they can be side by side -->
+	
+<label for="notes" id="notesLabel">Notes:</label>
+<br>
+<textarea id="notes"name="notes" rows="4" cols="50" placeholder="Enter any special instructions here.">
+</textarea>
+  <br>
+  <button type="order" id ="formButton">Order</button>
+</form>
+<!-- Editable text box to let the customer add any special notes -->
+<h4 style="font-size: 18px" id="ThanksText" style="display:none;";>Thank you. Your order has been placed!</h1> <!--Thank you text -->
+<p id="number"></p> 
+<!--<p id="type"></p> -->
+<p id="specialNotes"></p>
+<p id="alert"></p>
+<!-- these p boxes will be filled with text when the script runs -->
+
+<table id="selectionTable">
+	<tr>
+	    <td>Total Orders Last</td>
+		    <td>
+			<div class="dropdown">
+			  <button class="dropbtn" id="dropbtn">Month</button>
+			  	<div class="dropdown-content" id="dropdown">
+				    <a href="#" id="janbtn">January</a>
+				    <a href="#" id="febbtn">February</a>
+				    <a href="#" id="marbtn">March</a>
+				    <a href="#" id="aprbtn">April</a>
+				    <a href="#" id="maybtn">May</a>
+				    <a href="#" id="junbtn">June</a>
+				    <a href="#" id="julbtn">July</a>
+				    <a href="#" id="augbtn">August</a>
+				    <a href="#" id="sepbtn">September</a>
+				    <a href="#" id="novbtn">November</a>
+				    <a href="#" id="decbtn">December</a>
+			 	</div>
+				</div>
+			</h3>
+		</td> 
+ 	</tr>
+</table>
+
+
+
+<ul style="font-size: 20px;">
+  <li>11 cherry</li>
+  <li>17 chocolate</li>
+  <li>31 plain</li>
+</ul>
+<!-- text to show how much cheesecake was ordered -->
+
+
+<script src="javascripts/Order.js"></script>
+
+
+
+</body>
+</html>
