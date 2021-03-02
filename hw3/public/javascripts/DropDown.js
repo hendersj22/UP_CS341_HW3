@@ -1,42 +1,92 @@
 /* Javascript codes extracted from HTML*/
 /* Joshua Henderson */
-/* 11 Feb 2021 */
+/* 11 Feb 2021 , modified 01 March 2021*/
 
+
+//post lines are below each button month so that they can all update
 $(document).ready(function(){
   $("#dropdown").on('click','#janbtn', function(){
     $("#dropbtn").html("January");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#febbtn").click(function(){
     $("#dropbtn").html("February");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#marbtn").click(function(){
     $("#dropbtn").html("March");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#aprbtn").click(function(){
     $("#dropbtn").html("April");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#maybtn").click(function(){
     $("#dropbtn").html("May");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#junbtn").click(function(){
     $("#dropbtn").html("June");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#julbtn").click(function(){
     $("#dropbtn").html("July");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#augbtn").click(function(){
     $("#dropbtn").html("August");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#sepbtn").click(function(){
     $("#dropbtn").html("September");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#octbtn").click(function(){
     $("#dropbtn").html("October");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#novbtn").click(function(){
     $("#dropbtn").html("November");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
   $("#decbtn").click(function(){
     $("#dropbtn").html("December");
+    $.post('http://localhost:3000/orders',function(data){
+        $("#num_cherry").text(data.cherry);
+        $("#num_plain").text(data.plain);
+        $("#num_chocolate").text(data.chocolate);});
   });
 });
