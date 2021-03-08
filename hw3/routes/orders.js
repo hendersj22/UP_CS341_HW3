@@ -33,6 +33,8 @@ router.post('/',function(req,res){
     var cherryData = (arrayOrders.data[0].quantity + " " + arrayOrders.data[0].topping);
     var plainData = (arrayOrders.data[1].quantity + " " + arrayOrders.data[1].topping);
     var chocolateData = (arrayOrders.data[2].quantity + " " + arrayOrders.data[2].topping);
+    var month = req.body.month;
+    console.log(month); 
     res.send({cherry: cherryData, plain: plainData, chocolate: chocolateData }); 
 });
 
